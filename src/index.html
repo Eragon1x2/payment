@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js" type="module"></script>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+  
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  slidesPerView: 1.5,
+  centeredSlides: true,
+  initialSlide: 1,
+  controller: {
+    inverse: true,
+  },
+  parallax: true,
+  spaceBetween: 70,
+
+  // If we need paginatio
+
+  // Navigation arrows
+  navigation: {
+    // nextEl: '.swiper-button-next',
+    // prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+});
+const swiper_cont = document.querySelector('.swiper');
+const prev = document.querySelector('.prev-button');
+const next = document.querySelector('.next-button');
+console.log(prev)
+next.addEventListener('click', () => {
+    swiper_cont.swiper.slideNext();
+})
+prev.addEventListener('click', () => {
+    swiper_cont.swiper.slidePrev();
+})
+  </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+  </body>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header_mobile">
+        <button class="header_mobile_gg"><img src="./img/burger.svg" width="50"></button>
+    </div>
+    <div class="header_burger">
+        <button><img src="./img/close.svg" width="50"></button>
+        <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Products <span></span></a></li>
+                    <li><a href="">Pages <span></span></a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+    </div>
+<header>
+    <div class="container">
+        <ul class="one_panel">
+        <li><h4>Logo</h4></li>
+        <li>
+        <div>
+            <input type="text" placeholder="Search here...">
+        <p><span><img width="20" src="./img/icons/dog.svg"></span>email@mail.com</p>
+        <p><span><img width="20" src="./img/icons/tel.svg"></span>(000) 888-8</p>
+        </div>
+        </li>
+        </ul>
+        <div class="two_panel">
+        <ul class="two_panel_list">
+            <li><ul class="two_panel_sho" style="display: flex;">
+                <li><a class="two_panel_list_item" href="">Home</a></li>
+                <li><a class="two_panel_list_item"href="">Products <span></span></a><img width="9" src="./img/icons/arrow_down.svg"></li>
+                <li><a  class="two_panel_list_item"href="">Pages <span></span></a><img width="9" src="./img/icons/arrow_down.svg"></li>
+                <li><a class="two_panel_list_item"href="">Blog</a></li>
+                <li><a class="two_panel_list_item"href="">Contact us</a></li>
+            </ul>
+            </li>
+            <li style="display:flex; align-items:center;">
+                <p style="display: flex; align-items: center;"><span><img src="./img/icons/language.svg" width="24"></span>English</p>
+                <button class="two_panel_button"><span>Sing up <svg>
+                    <use href="./img/icons/arrow_right.svg#icon-arrow-right2"></use>
+                  </svg></span></button>
+            </li>
+        </ul>
+        </div>
+    </div>
+</header> 
+<section class="hero">
+        <ul class="hero_list">
+            <li class="hero_item">
+                <!-- Start accepting <span class="hero_title_img">payments</span> in 3 minutes -->
+                <h1 class="hero_title" id="element"></h1>
+                <p class="hero_text" id="element_two"></p>
+                <div class="hero_buttons">
+                    <button>Start now</button>
+                    <button>Read the developer docs</button>
+                </div>
+                <div class="hero_otzivi">
+                    <p class="hero_p">4.7</p>
+                    <div>
+                        <p class="hero_p_two">top rated on trustpilot</p>
+                        <ul class="stars">
+                            <li><svg class="icon icon-star-full"><use href="./img/icons/star.svg#icon-star-full"></use></svg></li>
+                            <li><svg class="icon icon-star-full"><use href="./img/icons/star.svg#icon-star-full"></use></svg></li>
+                            <li><svg class="icon icon-star-full"><use href="./img/icons/star.svg#icon-star-full"></use></svg></li>
+                            <li><svg class="icon icon-star-full"><use href="./img/icons/star.svg#icon-star-full"></use></svg></li>
+                            <li><svg class="icon icon-star-full"><use href="./img/icons/star.svg#icon-star-full"></use></svg></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="./img/hero.png" data-aos="fade-left"
+                data-aos-duration="3000"
+                data-aos-easing="ease-in-out">
+            </li>
+        </ul>
+</section> 
+<section class="accept">
+    <div class="container">
+        <h2 class="accept_title">
+            Accepting payments should not be hard
+        </h2>
+        <p class="accept_text">Acccept payment using invoice, quick checkout, API’s and  payment buttons</p>
+        <ul>
+            <li data-aos="fade-right"  data-aos-duration="1000">
+                <img src="./img/accept/1.jpg">
+                <div>
+                    <p>Invoices</p>
+                    <h3>One click onvoice with full accounting setup</h3>
+                    <p>Lorem ipsum dol amet, consecte adipisicing elit sed do. some dsu text will be here.</p>
+                    <button><img src="./img/icons/arrow_right_long.svg"></button>
+                </div>
+            </li>
+            <li data-aos="fade-left"  data-aos-duration="2000">
+                <img src="./img/accept/2.jpg">
+                <div>
+                    <p>quick checkout</p>
+                    <h3>No website? No issues</h3>
+                    <p>Lorem ipsum dol amet, consecte adipisicing elit sed do. some dsu text will be here.</p>
+                    <button><img src="./img/icons/arrow_right_long.svg"></button>
+                </div>
+            </li>
+            <li data-aos="fade-right"  data-aos-duration="3000">
+                <img src="./img/accept/3.jpg">
+                <div>
+                    <p>no-nonsense comission</p>
+                    <h3>Just pay 1% of transaction amount </h3>
+                    <p>Lorem ipsum dol amet, consecte adipisicing elit sed do. some dsu text will be here.</p>
+                    <button><img src="./img/icons/arrow_right_long.svg"></button>
+                </div>
+            </li>
+        </ul>
+        <h2 class="accept_title">Having issues with integration and setup</h2>
+        <button class="accept_button">Let us know</button>
+    </div>
+</section>
+<section class="seller">
+    <div class="container">
+        <div class="seller_title">
+            <h2><span>20000+ </span>trusted by thousands of sellers</h2>
+            <p>Your money and customer data is in safe hand. Best in class security and encryption.</p>
+        </div>
+        <ul class="seller_list">
+            <li data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000"><h5>Fastest growing gateway</h5></li>
+            <li><h5>Your personal success manager</h5><p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+            </p></li>
+            <li><h5>Hassel free integration</h5></li>
+        </ul>
+    </div>
+</section>
+<section class="money">
+    <div class="container">
+        <div class="money_gg">
+            <div class="money_gg_all">
+                <div class="money_gg_one">
+                    <h2>32k</h2>
+                    <p>Daily transactions</p>
+                </div>
+                <div class="money_gg_two">
+                    <h2>2300+</h2>
+                    <p>Sellers</p>
+                </div>
+                <div class="money_gg_three">
+                    <h2>12b+</h2>
+                    <p>worth of transactions</p>
+                </div>
+            </div>
+        </div>
+        <div class="money_texts">
+            <h3>Another <span>money </span>heading goes here</h3>
+            <p>Ask CDCR San Quintin State Prison 2008. We installed Purex dispensers throughout the prison to combat diseases…and it was a Roaring Success (as in Roaring Drunk) I mean we had Long lines of prisoners fist fighting to use them.</p>
+            <button>Sign up now</button>
+        </div>
+    </div>
+</section>
+<section class="slider">
+    <h2><span class="slider_dont">Don’t</span>  trust us. Trust the industry leaders</h2>
+    <p class="slider_gg">See what are users are saying about our services and support</p>
+    <div class="swiper" css-mode="true">
+        <!-- Additional required wrapper -->
+        <button class="prev-button nav_item"><svg><use href="./img/arrow_left.svg#icon-arrow-left2"></use></svg></button>
+        <button class="next-button nav_item"><svg><use href="./img/arrow_right.svg#icon-arrow-right2"></use></svg></button>
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+           <div class="slide">
+            <img src="./img/Oval (1).jpg">
+            <h6>Dani daniels</h6>
+            <p>Texas, USA</p>
+            <p>“Lorem ipsu dolor sit amet, consectetur adipiscg elit,
+                sed do eiusmod tempor incididunt ut labor et
+                 magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                 commodo consequat.”</p>
+           </div>
+          </div>
+          <div class="swiper-slide swiper-slide-two swiper-slide-active"> <div class="slide">
+            <img src="./img/Oval (1).jpg">
+            <h6>Dani daniels</h6>
+            <p>Texas, USA</p>
+            <p>“Lorem ipsu dolor sit amet, consectetur adipiscg elit,
+                sed do eiusmod tempor incididunt ut labor et
+                 magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                 commodo consequat.”</p>
+           </div></div>
+          <div class="swiper-slide"> <div class="slide">
+            <img src="./img/Oval (1).jpg">
+            <h6>Dani daniels</h6>
+            <p>Texas, USA</p>
+            <p>“Lorem ipsu dolor sit amet, consectetur adipiscg elit,
+                sed do eiusmod tempor incididunt ut labor et
+                 magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                 commodo consequat.”</p>
+           </div></div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+      
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+</section>
+<section class="custom">
+    <div class="container">
+        <div class="custom_texts">
+            <h2>Enter your custom <span>title here</span></h2>
+            <p>For more information, please visit the <span>Help Center.</span>
+                also find all faq’s on our faq’s page</p>
+            <button>Go to Faq’s</button>
+        </div>
+        <div class="acordion">
+            <button class="accordion">Maecenas tincidunt lacus at velit.<span><img width="10px" src="./img/icons/arrow_down.svg"></span></button>
+    <div class="panel">
+      <p>“Lorem ipsu dolor sit amet, consectetur adipiscg elit,
+        sed do eiusmod tempor incididunt ut labor et
+         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+         commodo consequat.”</p>
+    </div>
+    
+    <button class="accordion">Maecenas tincidunt lacus at velit.<span><img width="10px" src="./img/icons/arrow_down.svg"></span></button>
+    <div class="panel">
+      <p>“Lorem ipsu dolor sit amet, consectetur adipiscg elit,
+        sed do eiusmod tempor incididunt ut labor et
+         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+         commodo consequat.”</p>
+    </div>
+    
+    <button class="accordion">Maecenas tincidunt lacus at velit.<span><img width="10px" src="./img/icons/arrow_down.svg"></span></button>
+    <div class="panel">
+      <p>“Lorem ipsu dolor sit amet, consectetur adipiscg elit,
+        sed do eiusmod tempor incididunt ut labor et
+         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+         commodo consequat.”</p>
+    </div>
+    <button class="accordion">Maecenas tincidunt lacus at velit.<span><img width="10px" src="./img/icons/arrow_down.svg"></span></button>
+    <div class="panel">
+      <p>“Lorem ipsu dolor sit amet, consectetur adipiscg elit,
+        sed do eiusmod tempor incididunt ut labor et
+         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+         commodo consequat.”</p>
+    </div>
+    <button class="accordion">Maecenas tincidunt lacus at velit.<span><img width="10px" src="./img/icons/arrow_down.svg"></span></button>
+    <div class="panel">
+      <p>“Lorem ipsu dolor sit amet, consectetur adipiscg elit,
+        sed do eiusmod tempor incididunt ut labor et
+         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+         commodo consequat.”</p>
+    </div>
+    <button class="accordion">Maecenas tincidunt lacus at velit.<span><img width="10px" src="./img/icons/arrow_down.svg"></span></button>
+    <div class="panel">
+      <p>“Lorem ipsu dolor sit amet, consectetur adipiscg elit,
+        sed do eiusmod tempor incididunt ut labor et
+         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+         commodo consequat.”</p>
+    </div>
+        </div>
+    </div>
+</section>
+<section class="finance">
+    <div class="container">
+        <p class="finance_text">NEWS & UPDATES</p>
+        <h2 class="finance_title">We talk about finance</h2>
+        <ul>
+            <li>
+            <div></div>
+            <p>8/30/14</p>
+            <h3>Fusce elementum quam quis ipsum egestas euismod.</h3>
+            <button>Read more <span><img src="./img/arrow_right.svg" alt=""></span></button>
+            </li>
+            <li>
+                <div></div>
+                <p>8/30/14</p>
+                <h3>Fusce elementum quam quis ipsum egestas euismod.</h3>
+                <button>Read more <span><img src="./img/arrow_right.svg" alt=""></span></button>
+                </li>
+                <li>
+                    <div></div>
+                    <p>8/30/14</p>
+                    <h3>Fusce elementum quam quis ipsum egestas euismod.</h3>
+                    <button>Read more <span><img src="./img/arrow_right.svg" alt=""></span></button>
+                    </li>
+        </ul>
+    </div>
+</section>
+<footer>
+    <!-- <h1 class="anim-typewriter line-1">Thanks</h1>
+    <p class="anim-typewriter-two line-2">for visit our site</p> -->
+</footer>
+<script type="module">
+    var typed = new Typed('#element', {
+      strings: ['Start accepting payments in 3 minutes'],
+      smartBackspace: false,
+      typeSpeed: 70,
+    });
+    var typeds = new Typed('#element_two', {
+      strings: ['Integrate xyz payment gateway without any technical knowledge. '],
+      typeSpeed: 70,
+      startDelay: 4000,
+    });
+  </script>
+  <script type="module">
+    AOS.init()
+  </script>
+</body>
+</html>
